@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <path 
+    d="M256 64
+       C 256 64, 128 220, 128 320
+       C 128 390.7, 185.3 448, 256 448
+       C 326.7 448, 384 390.7, 384 320
+       C 384 220, 256 64, 256 64 z" 
+    fill="#C8A46A"
+  />
+
+  <path 
+    d="M280 150
+       Q 340 250 340 320
+       A 60 60 0 0 1 330 360"
+    fill="none"
+    stroke="#FAF7F2"
+    stroke-width="15"
+    stroke-linecap="round"
+    opacity="0.2"
+  />
+</svg>

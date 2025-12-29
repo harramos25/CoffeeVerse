@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-coffee-dark: #3A2C27;
+  --color-coffee-light: #E8D9C4;
+  --color-coffee-gold: #C8A46A;
+  --color-coffee-cream: #FAF7F2;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Lato", sans-serif;
+  --font-accent: "Montserrat", sans-serif;
+}
+
+/* The Noise Layer */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.05;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  filter: contrast(170%) brightness(100%);
+}
+
+/* Ultra-Premium Glassmorphism */
+.glass-panel {
+  @apply bg-white/5 border border-white/10;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+}
+
+body {
+  @apply bg-coffee-cream text-coffee-dark font-sans antialiased;
+}

@@ -131,8 +131,10 @@ const Footer3D = () => {
 
                 {/* --- BOTTOM ROW (Back to top) --- */}
                 <div className="flex justify-between items-end border-t border-[#FAF7F2]/10 pt-10 mb-20">
-                    <div className="text-[#FAF7F2]/30 text-[10px] uppercase tracking-widest">
-                        © 2025 CoffeeVerse. All rights reserved.
+                    <div className="text-[#FAF7F2]/40 text-xs uppercase tracking-widest flex flex-col sm:flex-row sm:items-center gap-2">
+                        <span>© 2025 CoffeeVerse. All rights reserved.</span>
+                        <span className="hidden sm:inline">•</span>
+                        <span className="text-[#C8A46A] font-bold">Designed & Developed by RAHRA DEV TECH</span>
                     </div>
 
                     <button

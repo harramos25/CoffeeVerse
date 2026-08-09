@@ -7,11 +7,14 @@ const PageLoader = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        setLoading(true);
+        const startTimer = setTimeout(() => setLoading(true), 0);
         const timer = setTimeout(() => {
             setLoading(false);
         }, 800); // Fake load time
-        return () => clearTimeout(timer);
+        return () => {
+            clearTimeout(startTimer);
+            clearTimeout(timer);
+        };
     }, [location]);
 
     return (

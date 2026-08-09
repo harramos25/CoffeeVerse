@@ -6,7 +6,6 @@ import { ArrowUpRight } from 'lucide-react';
 import prodTokyo from '../assets/images/prod-tokyo.png';
 import prodParis from '../assets/images/prod-paris.png';
 import prodDubai from '../assets/images/prod-dubai.png';
-import prodKit from '../assets/images/prod-kit.png';
 import prodEspresso from '../assets/images/prod-espresso.png';
 
 const products = [

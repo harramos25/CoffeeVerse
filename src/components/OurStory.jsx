@@ -1,16 +1,11 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import storyBg from '../assets/images/loc-tokyo.png';
 import detailImg from '../assets/images/loc-paris.png';
 
 const OurStory = () => {
     const sectionRef = useRef(null);
-
-    const { scrollYProgress } = useScroll({
-        target: sectionRef,
-        offset: ["start end", "end start"]
-    });
 
     const textVariants = {
         hidden: { opacity: 0, y: 50 },

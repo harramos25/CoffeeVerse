@@ -7,7 +7,6 @@ import { useCart } from '../context/CartContext';
 import prodTokyo from '../assets/images/prod-tokyo.png';
 import prodParis from '../assets/images/prod-paris.png';
 import prodDubai from '../assets/images/prod-dubai.png';
-import prodEspresso from '../assets/images/prod-espresso.png';
 import prodV60 from '../assets/images/prod-equipment-v60.png';
 
 // Fallback Unsplash for items I couldn't generate due to quota

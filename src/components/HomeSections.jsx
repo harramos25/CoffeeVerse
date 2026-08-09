@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform, useMotionValue } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, MapPin } from 'lucide-react';
 
 // Images
@@ -10,7 +10,6 @@ import prodEthiopia from '../assets/images/product-bag.png';
 import locTokyo from '../assets/images/loc-tokyo.png';
 import locParis from '../assets/images/loc-paris.png';
 import locDubai from '../assets/images/loc-dubai.png';
-import imgCafe from '../assets/images/cafe-interior.png';
 // import imgPour from '../assets/images/coffee-brewing.png'; // Unused in this version but keeping import avail if needed
 
 // --- SHARED DATA ---

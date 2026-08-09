@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const CartContext = createContext();
@@ -5,14 +6,15 @@ const CartContext = createContext();
 export const useCart = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState(() => {
+        try {
+            const savedCart = localStorage.getItem('coffeeverse_cart');
+            return savedCart ? JSON.parse(savedCart) : [];
+        } catch {
+            return [];
+        }
+    });
     const [isCartOpen, setIsCartOpen] = useState(false);
-
-    // Load from LocalStorage on mount
-    useEffect(() => {
-        const savedCart = localStorage.getItem('coffeeverse_cart');
-        if (savedCart) setCart(JSON.parse(savedCart));
-    }, []);
 
     // Save to LocalStorage whenever cart changes
     useEffect(() => {

@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { MapPin, Mail, Phone, ArrowRight, Send } from 'lucide-react';
 
 // --- MAGNETIC BUTTON COMPONENT ---
@@ -61,9 +61,6 @@ const MagneticButton = ({ children, onClick }) => {
 
 // --- MAIN CONTACT PAGE ---
 const Contact = () => {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const [focusedField, setFocusedField] = useState(null);
-
     return (
         <div className="min-h-screen bg-[#FAF7F2] flex flex-col lg:flex-row">
 

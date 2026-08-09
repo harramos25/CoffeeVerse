@@ -118,10 +118,13 @@ const Navbar3D = () => {
                 className="fixed left-1/2 -translate-x-1/2 z-50 flex items-center justify-between px-8 py-6 text-[#FAF7F2] max-w-[1400px]"
             >
                 {/* 1. LOGO */}
-                <div className="flex-1">
+                <div className="flex-1 flex items-center gap-3">
                     <Link to="/" className="text-xl font-serif font-bold tracking-tighter hover:text-[#C8A46A] transition-colors">
                         COFFEEVERSE
                     </Link>
+                    <span className="hidden sm:inline-block text-[9px] uppercase tracking-widest px-2.5 py-0.5 rounded-full border border-[#C8A46A]/40 text-[#C8A46A] font-sans font-semibold bg-[#C8A46A]/10">
+                        Portfolio Showcase
+                    </span>
                 </div>
 
                 {/* 2. LINKS (Hidden on Mobile) - Using 3D Flip */}
@@ -197,8 +200,13 @@ const Navbar3D = () => {
                             ))}
                         </nav>
 
-                        <div className="absolute bottom-10 text-[#C8A46A] text-xs uppercase tracking-[0.4em]">
-                            Tokyo • Paris • Dubai
+                        <div className="absolute bottom-10 flex flex-col items-center gap-2">
+                            <div className="text-[#C8A46A] text-xs uppercase tracking-[0.4em]">
+                                Tokyo • Paris • Dubai
+                            </div>
+                            <div className="text-[#FAF7F2]/50 text-[10px] uppercase tracking-widest font-sans">
+                                Portfolio & Concept Showcase
+                            </div>
                         </div>
                     </motion.div>
                 )}

@@ -70,7 +70,11 @@ const FooterGate = () => {
 
                 {/* --- BOTTOM BAR --- */}
                 <div className="flex justify-between items-center border-t border-[#FAF7F2]/10 pt-8">
-                    <p className="text-[#FAF7F2]/30 text-[10px] uppercase tracking-widest">© 2025 CoffeeVerse.</p>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                        <p className="text-[#FAF7F2]/30 text-[10px] uppercase tracking-widest">© 2025 CoffeeVerse.</p>
+                        <span className="hidden sm:inline text-[#FAF7F2]/20 text-[10px]">•</span>
+                        <p className="text-[#C8A46A]/80 text-[10px] uppercase tracking-widest font-semibold">Created for Portfolio & Demonstration</p>
+                    </div>
                     <button onClick={scrollToTop} className="flex items-center gap-2 text-[#C8A46A] hover:text-[#FAF7F2] transition-colors">
                         <span className="text-[10px] uppercase tracking-[0.2em] font-bold">Scroll to Top</span>
                         <ArrowUp size={16} />

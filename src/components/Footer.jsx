@@ -97,8 +97,10 @@ const Footer = () => {
 
                 {/* MIDDLE SECTION: Back to Top */}
                 <div className="flex justify-between items-end border-t border-[#FAF7F2]/10 pt-10 mb-10">
-                    <div className="text-[#FAF7F2]/40 text-xs uppercase tracking-widest">
-                        © 2025 CoffeeVerse. All rights reserved.
+                    <div className="text-[#FAF7F2]/40 text-xs uppercase tracking-widest flex flex-col sm:flex-row sm:items-center gap-2">
+                        <span>© 2025 CoffeeVerse. All rights reserved.</span>
+                        <span className="hidden sm:inline">•</span>
+                        <span className="text-[#C8A46A] font-semibold">Portfolio Showcase Project</span>
                     </div>
 
                     <button

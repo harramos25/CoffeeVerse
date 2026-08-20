@@ -123,7 +123,7 @@ const Navbar3D = () => {
                         COFFEEVERSE
                     </Link>
                     <span className="hidden sm:inline-block text-[9px] uppercase tracking-widest px-2.5 py-0.5 rounded-full border border-[#C8A46A]/40 text-[#C8A46A] font-sans font-semibold bg-[#C8A46A]/10">
-                        Portfolio Showcase
+                        Demo
                     </span>
                 </div>
 
